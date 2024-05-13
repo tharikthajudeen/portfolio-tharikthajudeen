@@ -11,31 +11,31 @@ export default function Projects() {
     // Project data
     const projectsData = [
         {
+            image: Mart,
+            title: 'MERN Mart',
+            description: 'A simple e-commerce website developed solely by me using the MERN stack. It offers basic e-commerce functionalities for online shopping needs.',
+            frontend: 'React.js, Tailwind CSS',
+            backend: 'Express.js, Node.js, MongoDB',
+            githubLink: 'https://github.com/tharikthajudeen/MERN-Mart-ecommerce-website',
+            projectLink: 'https://www.example.com/e-commerce-app'
+        },
+        {
             image: Donor,
-            title: 'DONOR : Blood Donation Mobile App',
-            description: 'Directed integration of Express.js, Node.js, MongoDB in a Blood Donation Mobile App project, complemented by React Native. Successfully met tight project deadlines despite initial unfamiliarity.',
-            frontend: 'React Native, Expo ',
-            backend: 'Express.js, Node.js, MongoDB ',
-            githubLink: 'https://github.com/tharikthajudeen0/DONOR-blood-donation-mobile-app',
+            title: 'DONOR',
+            description: 'Spearheaded the development of a comprehensive Blood Donation Android App, leveraging Java and SQLite. Overcame initial hurdles to deliver a user-friendly and intuitive application for facilitating blood donations.',
+            frontend: 'XML, Java ',
+            backend: 'SQLite',
+            githubLink: 'https://github.com/tharikthajudeen/DONOR-blood-donation-android-app',
             projectLink: 'https://www.example.com/task-manager'
         },
         {
             image: Portfolio,
             title: 'Portfolio Website + Admin Panel',
-            description: ' Constructed a fundamental portfolio website using HTML, CSS, JavaScript, PHP and MySQL, gaining insight into both frontend and backend intricacies.',
-            frontend: 'HTML, CSS, JavaScript',
+            description: ' Developed a dynamic portfolio website with an integrated admin panel, empowering users with easy content management capabilities.',
+            frontend: 'HTML, JavaScript, CSS',
             backend: 'PHP, MySQL',
-            githubLink: 'https://github.com/tharikthajudeen0/portfolio-website-with-admin-panel',
+            githubLink: 'https://github.com/tharikthajudeen/portfolio-website-with-admin-panel',
             projectLink: 'https://www.example.com/portfolio'
-        },
-        {
-            image: Mart,
-            title: 'MERN Mart : E-Commerce Website',
-            description: 'Introducing MERN Mart It is a very simple e-commerce website developed using the MERN stack. Covering all the basic e-commerce concepts briefly, it offers a straightforward solution for your online shopping needs.',
-            frontend: 'React.js',
-            backend: 'Express.js, Node.js, MongoDB',
-            githubLink: 'https://github.com/tharikthajudeen0/MERN-Mart-e-commerce-website',
-            projectLink: 'https://www.example.com/e-commerce-app'
         },
     ];
 
@@ -62,7 +62,7 @@ export default function Projects() {
                         <div className="md:w-2/3 flex flex-col md:items-start justify-center"> {/* Centering and aligning content */}
                             <h2 className="text-3xl font-bold mb-4 text-center md:text-left">{project.title}</h2> {/* Centering title on mobile */}
                             <p className="text-lg mb-6 text-center md:text-left text-custom-gray">{project.description}</p>
-                            <p className="text-xl mb-6 text-custom-gray">Frontend : {project.frontend}</p>
+                            <p className="text-xl mb-1 text-custom-gray">Frontend : {project.frontend}</p>
                             <p className="text-xl mb-6 text-custom-gray">Backend : {project.backend}</p>
                             <div className="flex md:justify-start "> {/* Centering links */}
                                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="mr-6 text-blue-400 hover:underline">GitHub</a>
