@@ -22,7 +22,7 @@ export default function Projects() {
         {
             image: Donor,
             title: 'DONOR',
-            description: 'Spearheaded the development of a comprehensive Blood Donation Android App, leveraging Java and SQLite. Overcame initial hurdles to deliver a user-friendly and intuitive application for facilitating blood donations.',
+            description: 'Spearheaded the development of a comprehensive Blood Donation Android App. Overcame initial hurdles to deliver a user-friendly and intuitive application for facilitating blood donations.',
             frontend: 'XML, Java ',
             backend: 'SQLite',
             githubLink: 'https://github.com/tharikthajudeen/DONOR-blood-donation-android-app',
