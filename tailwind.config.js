@@ -5,8 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-blue': 'linear-gradient(180deg, #002244, #000428)',
+        'nav-custom-blue': 'linear-gradient(180deg, #002244, #000428)',
+      },
       colors: {
-        'custom-blue': '#002244',
         'nav-custom-blue': '#13274F',
         'custom-light-Blue' : '#90c2e7',
         'custom-gray': '#C0C0C0',

@@ -63,7 +63,7 @@ function NavItem ({href, children}) {
 function Home() {
     const [toggleMenu, setToggleMenu] = useState(false);
 
-    const paragraphContent = "Enthusiastic beginner in MERN stack development, with React.js as the primary focus. Eager to learn and contribute to crafting dynamic web applications using MongoDB, Express.js, React.js, and Node.js. Excited to build innovative solutions with these technologies.";
+    const paragraphContent = "Intermediate MERN stack developer with a focus on React.js. Skilled in creating dynamic web applications using MongoDB, Express.js, React.js, and Node.js. Flexible and adaptable to different technologies, and excited to build innovative solutions across various tech stacks.";
     const position = "Undergraduate";
 
     return (
@@ -78,7 +78,7 @@ function Home() {
             <div className='flex flex-col md:flex-row bg-custom-blue text-white items-center md:h-screen px-[5px] py-[50px] md:px-[80px] md:py-[20px] '>
                 {/* <img src={Robo} alt="Robo" className="w-2/5 object-contain" onError={(e) => e.target.style.display = 'none'} />  */}
                 <div className='flex flex-col w-full px-5 py-5 text-center '>
-                    <h1 className='font-bold font-serif text-4xl md:text-6xl '>Hello there! I'm <span className='text-custom-light-Blue'>Tharik Thajudeen</span></h1>
+                    <h1 className='font-bold font-serif text-4xl md:text-6xl '>Hello there! I'm <span className='text-white'>Tharik Thajudeen</span></h1>
                     {/* <h2 className='font-bold text-gray-100 text-2xl mt-[10px] mb-[20px]'>{position}</h2> */}
                     <p className='font-sans text-xl md:text-2xl text-custom-gray py-[10px] md:py-[20px]'>{paragraphContent}</p>
                 </div>
