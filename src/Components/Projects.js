@@ -13,7 +13,7 @@ export default function Projects() {
         {
             image: Mart,
             title: 'MERN Mart',
-            description: 'A simple e-commerce website developed solely by me using the MERN stack. It offers basic e-commerce functionalities for online shopping needs.',
+            description: 'A simple e-commerce website developed using the MERN stack. It offers basic e-commerce functionalities for online shopping needs.',
             frontend: 'React.js, Tailwind CSS',
             backend: 'Express.js, Node.js, MongoDB',
             githubLink: 'https://github.com/tharikthajudeen/MERN-Mart-ecommerce-website',

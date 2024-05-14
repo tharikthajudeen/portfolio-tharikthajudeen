@@ -6,11 +6,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-blue': 'linear-gradient(180deg, #002244, #000428)',
-        'nav-custom-blue': 'linear-gradient(180deg, #002244, #000428)',
+        'custom-blue': 'linear-gradient(180deg, #000450, #000425)',
+        'nav-custom-blue': 'linear-gradient(180deg, #000450, #000425)',
       },
       colors: {
-        'nav-custom-blue': '#13274F',
         'custom-light-Blue' : '#90c2e7',
         'custom-gray': '#C0C0C0',
         'custom-green': '#99BC85',
