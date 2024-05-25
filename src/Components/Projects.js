@@ -53,15 +53,15 @@ export default function Projects() {
     // Render project items
     const renderProjectItems = () => {
         return projectsData.map((project, index) => (
-            <div key={index} className="flex items-center justify-center"> {/* Centering each project */}
-                <div className="bg-white bg-opacity-5 text-white rounded-xl shadow-xl p-8 w-full md:max-w-full"> {/* Adjusting the width of the project container */}
+            <div key={index} className="flex items-center justify-center w-full"> {/* Centering each project and setting full width */}
+                <div className="flex bg-white bg-opacity-5 text-white rounded-xl shadow-xl p-8 w-full md:max-w-full h-[750px] md:h-[500px]"> {/* Adjusting the width of the project container */}
                     <div className="flex flex-col md:flex-row md:items-center md:justify-center"> {/* Centering content in each project */}
                         <div className="md:w-1/3 md:mr-8 mb-6 md:mb-0 flex justify-center"> {/* Centering image */}
-                            <img src={project.image} alt={project.title} className=" w-full h-auto max-h-96" /> {/* Adjusting max-height of image */}
+                            <img src={project.image} alt={project.title} className="w-full h-auto max-h-[400px]" /> {/* Adjusting max-height of image */}
                         </div>
                         <div className="md:w-2/3 flex flex-col md:items-start justify-center"> {/* Centering and aligning content */}
                             <h2 className="text-3xl font-bold mb-4 text-center md:text-left">{project.title}</h2> {/* Centering title on mobile */}
-                            <p className="text-lg mb-6 text-center md:text-left text-custom-gray">{project.description}</p>
+                            <p className="text-lg mb-6 text-left text-custom-gray">{project.description}</p>
                             <p className="text-xl mb-1 text-custom-gray">Frontend : {project.frontend}</p>
                             <p className="text-xl mb-6 text-custom-gray">Backend : {project.backend}</p>
                             <div className="flex md:justify-start "> {/* Centering links */}
@@ -74,6 +74,7 @@ export default function Projects() {
             </div>
         ));
     };
+    
 
     // Slider settings
     const settings = {

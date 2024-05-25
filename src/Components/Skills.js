@@ -43,7 +43,7 @@ export default function Skills() {
                     <div
                         key={category}
                         className={`border-b border-white rounded-md shadow-2xl p-4 cursor-pointer transition duration-300 ease-in-out ${
-                            isSectionExpanded(category) ? 'bg-gray-500' : ''
+                            isSectionExpanded(category) ? '' : ''
                         }`}
                         onMouseEnter={() => handleSectionHover(category)}
                         onMouseLeave={() => setExpandedSection(null)}

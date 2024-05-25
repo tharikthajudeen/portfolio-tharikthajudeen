@@ -23,11 +23,11 @@ export default function Footer() {
                     <h2 className="text-xl font-semibold mb-4">Social Media</h2>
                     <div className="flex items-center text-custom-gray mb-2">
                         <FontAwesomeIcon icon={faGithub} className="text-xl mr-2" />
-                        <a href="https://github.com/tharikthajudeen" target="_blank" rel="noopener noreferrer" className=" hover:underline">tharikthajudeen</a>
+                        <a href="https://github.com/tharikthajudeen" target="_blank" rel="noopener noreferrer" className=" hover:underline">tharikthajudeen/github</a>
                     </div>
                     <div className="flex items-center text-custom-gray mb-2">
                         <FontAwesomeIcon icon={faLinkedin} className="text-xl mr-2" />
-                        <a href="https://www.linkedin.com/in/tharik-thajudeen-b58344226/" target="_blank" rel="noopener noreferrer" className="text-custom-gray hover:underline">tharik-thajudeen-b58344226</a>
+                        <a href="https://www.linkedin.com/in/tharik-thajudeen-b58344226/" target="_blank" rel="noopener noreferrer" className="text-custom-gray hover:underline">tharikthajudeen/linkedin</a>
                     </div>
                 </div>
                 <div>
