@@ -19,12 +19,15 @@ import MongoDB from '../Image/skill-mongodb.png';
 import Mysql from '../Image/skill-mysql.png';
 
 export default function Skills() {
+    // State to track the expanded section
     const [expandedSection, setExpandedSection] = useState(null);
 
+    // Function to handle section hover
     const handleSectionHover = (section) => {
         setExpandedSection(section);
     };
 
+    // Function to check if a section is expanded
     const isSectionExpanded = (section) => expandedSection === section;
 
     // Store images and text in objects based on their categories
@@ -38,6 +41,7 @@ export default function Skills() {
         <section id='skill' className="flex flex-col items-center bg-nav-custom-blue text-white px-[50px] py-[50px] md:py-[100px] md:px-[100px]">
             <h1 className="text-4xl md:text-6xl font-bold mb-[40px] md:mb-[60px]">Skills</h1>
 
+            {/* Grid to display each category of technologies */}
             <div className="grid grid-cols-1 sm:grid-cols-1 gap-5 md:gap-10 w-full max-w-screen-lg">
                 {Object.entries(technologyImages).map(([category, technologies]) => (
                     <div
@@ -48,6 +52,7 @@ export default function Skills() {
                         onMouseEnter={() => handleSectionHover(category)}
                         onMouseLeave={() => setExpandedSection(null)}
                     >
+                        {/* Section header with category name and toggle icon */}
                         <div className="flex items-center justify-between">
                             <h2 className=" text-xl md:text-2xl mb-2">{category.toUpperCase()}</h2>
                             <FontAwesomeIcon
@@ -55,6 +60,7 @@ export default function Skills() {
                                 className="ml-[10px] text-md"
                             />
                         </div>
+                        {/* Grid to display technologies within the category */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
                             {isSectionExpanded(category) &&
                                 Object.entries(technologies).map(([tech, image], index) => (

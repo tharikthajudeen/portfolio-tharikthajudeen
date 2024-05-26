@@ -1,22 +1,25 @@
-
 import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards.tsx";
 
 export default function About() {
   return (
+    // About section with a background, title, and InfiniteMovingCards component
     <section id='about' className="">
-    <div className="h-[40rem] flex flex-col antialiased bg-white dark:bg-nav-custom-blue dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <h1 className=" text-4xl md:text-6xl font-bold text-white mb-[40px] md:mb-[60px] text-center">About Me</h1>
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
+      <div className="h-[40rem] flex flex-col antialiased bg-white dark:bg-nav-custom-blue dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        {/* Title */}
+        <h1 className=" text-4xl md:text-6xl font-bold text-white mb-[40px] md:mb-[60px] text-center">About Me</h1>
+        {/* InfiniteMovingCards component displaying testimonials */}
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
     </section>
   );
 }
 
+// Testimonials data
 const testimonials = [
   {
     quote:

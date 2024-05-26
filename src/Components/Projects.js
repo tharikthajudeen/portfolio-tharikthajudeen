@@ -6,7 +6,6 @@ import Donor from '../Image/donor.jpeg';
 import Portfolio from '../Image/portfolio.jpeg';
 import Mart from '../Image/mern-mart.png';
 
-
 export default function Projects() {
     // Project data
     const projectsData = [
@@ -74,7 +73,6 @@ export default function Projects() {
             </div>
         ));
     };
-    
 
     // Slider settings
     const settings = {
