@@ -3,7 +3,6 @@ import { BackgroundBeams } from "./ui/background-beams.tsx";
 
 function Home() {
     const paragraphContent = "Intermediate MERN stack developer with a focus on React.js. Skilled in creating dynamic web applications using MongoDB, Express.js, React.js, and Node.js. Flexible and adaptable to different technologies, and excited to build innovative solutions across various tech stacks.";
-    const position = "Undergraduate";
 
     return (
         <section id='/' className='flex flex-col'>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { BackgroundBeams } from "./ui/background-beams.tsx";
 
 function Navigation() {
     return (
@@ -13,7 +12,7 @@ function Navigation() {
                 <NavItem href="#skill">Skills</NavItem>
                 <NavItem href="#project">Projects</NavItem>
                 <NavItem href="#experience">Experience</NavItem>
-                <NavItem href="#footer">Resume</NavItem>
+                <NavItem href="#footer">Contact</NavItem>
             </ul>
         </nav>
     );
@@ -30,7 +29,7 @@ function MobileNavigation({ toggleMenu }) {
                 <NavItem href="#skill">Skills</NavItem>
                 <NavItem href="#project">Projects</NavItem>
                 <NavItem href="#experience">Experience</NavItem>
-                <NavItem href="#footer">Resume</NavItem>
+                <NavItem href="#footer">Contact</NavItem>
             </ul>
         </nav>
     );
